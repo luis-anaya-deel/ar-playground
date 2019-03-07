@@ -96,7 +96,10 @@
   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
   <script src="./events.js"></script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix;">
+    <a-scene
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix;"
+    >
       <!-- arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4;" -->
       <a-assets>
         <a-asset id="bargs" src="./products/bargs.png"></a-asset>
@@ -105,6 +108,7 @@
       </a-assets>
 
       <a-marker
+        emitevents
         markerhandler
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse"
@@ -140,6 +144,7 @@
       </a-marker> -->
 
       <a-marker
+        emitevents
         markerhandler
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse"
@@ -175,6 +180,7 @@
       </a-marker> -->
 
       <a-marker
+        emitevents
         markerhandler
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse"
