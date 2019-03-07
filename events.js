@@ -1,5 +1,5 @@
 AFRAME.registerComponent("markerhandler", {
-  init: function() {
+  update: function() {
     const bargsMarker = document.querySelector("#marker-bargs");
     const bargsEntity = document.querySelector("#image-bargs");
     const doritosMarker = document.querySelector("#marker-doritos");
